@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Engineering</title>
+    <!-- استدعاء مكتبة الأيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f6f8; /* لون خلفية الصفحة بالكامل */
+            display: flex;
+            justify-content: center;
+        }
+        .main-container {
+            width: 100%;
+            max-width: 680px; /* عرض الصفحة لتبدو مثل الهاتف حتى على الكمبيوتر */
+            background-color: #ffffff;
+            min-height: 100vh;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        
+        /* إعدادات الغلاف الخلفي */
+        .banner {
+            width: 100%;
+            height: 220px;
+            /* قم بتغيير banner.jpg إلى اسم صورة الغلاف الخاصة بك */
+            background-image: url('banner.jpg');
+            background-color: #0b1e36; /* لون بديل في حال لم تظهر الصورة */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* إعدادات الشعار الدائري */
+        .profile-logo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            /* قم بتغيير logo.png إلى اسم صورة الشعار الخاصة بك */
+    background-image: url('logo.png');
+            background-color: #0b1e36;
+            background-size: cover;
+            background-position: center;
+            margin: -70px auto 15px auto; /* لرفع الشعار فوق الغلاف */
+            border: 5px solid #ffffff; /* الإطار الأبيض حول الشعار */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* إعدادات النصوص */
+        h1 {
+            font-size: 24px;
+            color: #111111;
+            margin: 10px 20px;
+            line-height: 1.4;
+            font-weight: 700;
+        }
+        
+        .location {
+            color: #888888;
+            font-size: 14px;
+            margin: 12px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        
+        .services-tags {
+            font-size: 14px;
+            font-weight: 600;
+            color: #222222;
+            margin: 20px 0 30px 0;
+        }
+
+        /* إعدادات أزرار التواصل الاجتماعي */
+        .social-icons-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 0 20px;
+        }
+        
+        .icon-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid #e0e0e0;
+            color: #111111;
+            text-decoration: none;
+            font-size: 22px;
+            transition: all 0.2s ease;
+        }
+        
+        .icon-btn:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.05); /* تكبير بسيط عند تمرير الماوس */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <!-- 1. صورة الغلاف -->
+        <div class="banner"></div>
+
+        <!-- 2. صورة الشعار -->
+        <div class="profile-logo"></div>
+
+        <!-- 3. العنوان الرئيسي -->
+        <h1>Delta Engineering<br>Inspection&Logistics<br>Service</h1>
+
+        <!-- 4. الموقع الجغرافي -->
+        <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Iraq, Basra, Hey Alghadir, District 2307</span>
+        </div>
+
+        <!-- 5. الخدمات -->
+        <div class="services-tags">
+            Inspection | Training | Calibration
+        </div>
+
+        <!-- 6. أزرار التواصل الاجتماعي -->
+        <div class="social-icons-container">
+            <!-- واتساب -->
+            <a href="https://wa.me/9647880009864" class="icon-btn" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            
+            <!-- اتصال هاتفي -->
+            <a href="tel:07831000333" class="icon-btn" title="Phone Call"><i class="fa-solid fa-phone"></i></a>
+            
+            <!-- لينكد إن -->
+            <a href="https://www.linkedin.com/company/delta-engineering-inspection-and-logistic-services/" class="icon-btn" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            
+            <!-- تيك توك -->
+            <a href="https://www.tiktok.com/@deltae.company?_r=1&_t=ZS-97MimCH1qRV" class="icon-btn" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            
+            <!-- انستقرام -->
+            <a href="https://www.instagram.com/delta.iq20?igsh=MTBncHhkbmcybHlnaA==" class="icon-btn" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+    </div>
+
+</body>
+</html>
